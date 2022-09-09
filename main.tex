@@ -1,0 +1,47 @@
+\documentclass[12pt]{book}
+\usepackage[width=4.375in, height=7.0in, top=1.0in, papersize={5.5in,8.5in}]{geometry}
+%\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tipa}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage[russian]{babel}
+\usepackage{fontspec}
+\setmainfont{Alegreya}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}
+\setlength{\footskip}{0in}
+\renewcommand{\footruleskip}{0pt}
+\fancypagestyle{plain}{%
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\parskip 0.05in
+
+\begin{document}
+	\frontmatter
+	%
+	\chapter*{\Huge \center ЗАКЛЯТЫЯ СКАРБЫ }
+	\thispagestyle{empty}
+	%{\hspace{0.25in} \includegraphics{./ru_sun.jpg} }
+    \section*{\huge \center RPG}
+	%
+	\mainmatter
+	%
+	\include{create}
+
+	
+	\backmatter
+	%
+\end{document}
